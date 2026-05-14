@@ -10,8 +10,15 @@ Future<void> testPuppeteer() async {
   final browser = await puppeteer.launch(
     executablePath:
         '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+    // if console - must be true
+    // if need to see browser - false
     headless: false,
-    args: [],
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--disable-dev-shm-usage',
+      '--disable-gpu',
+    ],
   );
   final tab = await browser.newPage();
   await tab.setUserAgent(
