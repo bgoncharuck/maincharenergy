@@ -1,3 +1,4 @@
+import 'dart:developer';
 import 'dart:io';
 import 'package:maincharenergy/maincharenergy.dart';
 
@@ -14,6 +15,7 @@ Future<void> main(List<String> a) async {
     if (args.command == 'start') {
       registerLoginData(await getLoginData());
       loginData.cliPrint();
+      await testPuppeteer();
       exit(0);
     }
     exit(1);
