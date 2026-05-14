@@ -316,3 +316,19 @@ Daemon must:
 - continue after terminal closes
 - run independently
 - not block shell
+
+## state.json
+
+```json
+{
+  "running": true,
+  "logged_in": true,
+  "last_health": 342,
+  "max_health": 408,
+  "godpower_percent": 50,
+  "accumulator_charges": 3,
+  "last_action": "restore",
+  "last_check": "2026-05-11T13:00:00Z",
+  "cooldown": 49
+}
+```
