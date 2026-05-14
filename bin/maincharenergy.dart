@@ -9,8 +9,9 @@ Future<void> main(List<String> a) async {
       print(ArgsData.helpText());
       exit(0);
     }
+    registerArgsData(args);
+
     if (args.command == 'start') {
-      registerArgsData(args);
       registerLoginData(await getLoginData());
       loginData.cliPrint();
       exit(0);
