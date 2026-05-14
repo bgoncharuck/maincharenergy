@@ -4,6 +4,7 @@ analyzer:
     lines_longer_than_80_chars: ignore
     avoid_redundant_argument_values: ignore
     flutter_style_todos: ignore
+    avoid_print: ignore
   exclude:
     - '**/*.g.dart'
     - '**/*.freezed.dart'
