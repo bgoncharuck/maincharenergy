@@ -1,0 +1,128 @@
+# ============================================
+# Dart / Flutter
+# ============================================
+.dart_tool/
+.build/
+build/
+.packages
+*.dart_tool
+.dart_tool/package_config.json
+*.packages
+*.snapshot
+
+# ============================================
+# Pub (Dart package manager)
+# ============================================
+# While pubspec.lock is typically committed for applications,
+# it's uncommented here as the project matures. Uncomment when ready.
+# pubspec.lock
+
+# ============================================
+# Very Good Analysis / Code generation outputs
+# ============================================
+**/*.g.dart
+**/*.freezed.dart
+
+# ============================================
+# Node.js / npm (Playwright / browser automation dependencies)
+# ============================================
+node_modules/
+npm-debug.log*
+package-lock.json
+yarn.lock
+yarn-error.log
+playwright/
+
+# ============================================
+# Browser profiles / session data (persisted by the daemon)
+# ============================================
+profiles/
+browser_profiles/
+session/
+sessions/
+*.session
+
+# ============================================
+# Cookies (persisted by the daemon)
+# ============================================
+cookies/
+cookies.*
+*.cookies
+*.cookie
+
+# ============================================
+# PID files (created by the daemon on `start`)
+# ============================================
+*.pid
+*.lock
+
+# ============================================
+# Logs (created by the daemon when --logs flag is used)
+# ============================================
+logs/
+*.log
+
+# ============================================
+# State / data files (persisted daemon state)
+# ============================================
+*.state
+*.json
+*.db
+*.sqlite
+
+# ============================================
+# OS files
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ============================================
+# IDE / Editor
+# ============================================
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# ============================================
+# Bash / Shell artifacts
+# ============================================
+# Compiled scripts
+*.shc
+
+# ============================================
+# C compiled artifacts
+# ============================================
+*.o
+*.so
+*.a
+*.dylib
+*.out
+*.exe
+
+# ============================================
+# Build outputs
+# ============================================
+dist/
+release/
+out/
+
+# ============================================
+# Environment and temporary files
+# ============================================
+.env
+.env.*
+*.env
+tmp/
+temp/
