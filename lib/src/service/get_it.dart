@@ -1,6 +1,7 @@
 import 'package:get_it/get_it.dart';
 import '../entitiy/args_data.dart';
 import '../entitiy/login_data.dart';
+import 'randi.dart';
 
 void registerArgsData(ArgsData argsData) {
   GetIt.instance.registerSingleton(argsData);
@@ -13,3 +14,9 @@ void registerLoginData(LoginData loginData) {
 }
 
 LoginData get loginData => GetIt.instance.get<LoginData>();
+
+void registerRandi() {
+  GetIt.instance.registerSingleton(Randi());
+}
+
+Randi get randi => GetIt.instance.get<Randi>();

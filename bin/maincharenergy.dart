@@ -10,6 +10,7 @@ Future<void> main(List<String> a) async {
       exit(0);
     }
     registerArgsData(args);
+    registerRandi();
 
     if (args.command == 'start') {
       registerLoginData(await getLoginData());
