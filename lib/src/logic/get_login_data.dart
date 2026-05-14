@@ -6,5 +6,6 @@ Future<LoginData> getLoginData() async {
   return LoginData(
     login: a.login ?? '',
     password: a.password ?? '',
+    loginUrl: 'https://godvillegame.com/login',
   );
 }
