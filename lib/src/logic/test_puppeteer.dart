@@ -13,7 +13,7 @@ Future<void> testPuppeteer() async {
     // if console - must be true
     // if need to see browser - false
     headless: false,
-    userDataDir: './user_data',
+    userDataDir: './browser_cache',
     args: [
       '--no-sandbox',
       '--disable-setuid-sandbox',
