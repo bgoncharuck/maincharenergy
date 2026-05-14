@@ -11,7 +11,8 @@ Future<void> main(List<String> a) async {
     }
     if (args.command == 'start') {
       registerArgsData(args);
-      await getLoginData();
+      registerLoginData(await getLoginData());
+      loginData.cliPrint();
       exit(0);
     }
     exit(1);
