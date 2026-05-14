@@ -1,6 +1,11 @@
 import 'package:maincharenergy/src/service/get_it.dart';
 import 'package:puppeteer/puppeteer.dart';
 
+/// works!
+/// goes into the page
+/// finds what needed
+/// goes there
+/// goes through pagination 7 times
 Future<void> testPuppeteer() async {
   final browser = await puppeteer.launch(
     executablePath:
